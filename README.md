@@ -1,1 +1,2 @@
 # Cryptocurrencies
+Analysis of crytpocurrency data from CryptoCompare. Unsupervised machine learning was used to establish a classification system for actively trading cryptocurrencies for potential investment prospects. Data was cleaned to remove data that is unable to be processed through machine learning, null values and cryptocurrencies that were not actively trading were additionally removed. The data was scaled to ensure all factors were weighted accurately in training, string values were encoded to be numerically representated.
