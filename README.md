@@ -35,7 +35,11 @@ Analysis of crytpocurrency data from CryptoCompare. Unsupervised machine learnin
 
 ![tradable_crypto_table_sorted](https://user-images.githubusercontent.com/100040705/179441189-a9c2aab2-ace6-49b6-b645-af86c87edf85.png)
 
-- For additional clarity and visualization purposed, a new dataframe with only the scaled total coin supply and total coins mined, along with name and class was created. Scaling of these features allowed graphing to explore the connection between these features and class as discussed in the previous section. The 
+- For additional clarity and visualization purposed, a new dataframe with only the scaled total coin supply and total coins mined, along with name and class was created. Scaling of these features allowed graphing to explore the connection between these features and class as discussed in the previous section. The graph shows 2 outliers rather than one as previously observed by the 3D graph. When discounting these outliers and zooming in on the area of the graph the rest of the data is concentrated there again is not a clear distinction between classes 0 and 1. The data points in class 3 appear to be clustered around the total coin supply and coins mined being nearly zero, which may be a reason the unsupervised machine learning model placed them in a group.
+- The graph created is show below, first at full size, then zoomed into the more concentrated data area.
+
+![coins_mined_vs_supply](https://user-images.githubusercontent.com/100040705/179441631-90777d34-3b8b-485d-ad53-9025ee46366e.png)
+![coins_mined_vs_supply_zoomed](https://user-images.githubusercontent.com/100040705/179441635-ed062a17-a165-457b-ae38-5035ea8c4e23.png)
 
 
 
