@@ -1,6 +1,14 @@
 # Cryptocurrencies
 Analysis of crytpocurrency data from CryptoCompare. Unsupervised machine learning was used to establish a classification system for actively trading cryptocurrencies for potential investment prospects.
+------------------------------------------
 
+##**Resources**
+
+Data Source: [Crypto_data.csv](https://github.com/shumph10/Cryptocurrencies/blob/main/Resources/crypto_data.csv), [CryptoCompare](https://min-api.cryptocompare.com/data/all/coinlist)
+
+Software: Python 3.9.7, VisualStudio Code 1.69.1, Jupyter Notebook 6.4.0, Scikit-Learn 1.0, Pandas 1.3.5, hvplot 0.7.3
+
+------------------------------------------
 
 ##**Preprocessing:**
 
@@ -13,6 +21,7 @@ Analysis of crytpocurrency data from CryptoCompare. Unsupervised machine learnin
 
 ![pcs_df](https://user-images.githubusercontent.com/100040705/179439614-e16d87c1-a7ce-4965-ac90-05f30604676a.png)
 
+------------------------------------------
 ##**Clustering using KMeans:**
 
 - After this preprocessing was complete, an elbow curve was created using the KMeans inertia of different k values(# of clusters) to find the ideal number of clusters to be used for analysis. KMeans will be used to cluster points based on the mean of all points belonging to that cluster. Inertia was used as the objective function here because it measures the amount of variation in the dataset. Using the value for k where the line switches from a vertical to horizontal direction to minimize variation and maximize functionality, we can see from the resulting elbow graph, the best value for k is 4. Therefore out analysis will utilize 4 clusters or categories for the cryptocurrencies. 
@@ -24,6 +33,7 @@ Analysis of crytpocurrency data from CryptoCompare. Unsupervised machine learnin
 
 ![clustered_df](https://user-images.githubusercontent.com/100040705/179440263-3d332154-d19b-4058-ae9a-8c80dbd9cedf.png)
 
+------------------------------------------
 ##**Visualization of Results**
 - The PCA data and the predicted class from the unsupervised learning model were plotted in a 3D graph for best possible visualization of cluster seperation. From this graph the class #2(shown in orange) is shown to only have one data point within it, since it is relatively far from all other groups this is most likely an outlier and after due diligence inspection may be considered to be dropped as an outlier. From all angles shown there is minimal seperation between classes 0 and 1 (shown in purple and pink respectively) and further investigation using a different unsupervised learning method may be required to establish the seperation between the two. 
 - The resulting graph is shown from two angles for best visualization of results below:
@@ -41,6 +51,8 @@ Analysis of crytpocurrency data from CryptoCompare. Unsupervised machine learnin
 ![coins_mined_vs_supply](https://user-images.githubusercontent.com/100040705/179441631-90777d34-3b8b-485d-ad53-9025ee46366e.png)
 ![coins_mined_vs_supply_zoomed](https://user-images.githubusercontent.com/100040705/179441635-ed062a17-a165-457b-ae38-5035ea8c4e23.png)
 
+------------------------------------------
 ##**Summary**
+
 From the analysis and cleaning of the data, 532 cryptocurrencies were able to be analyzed through unsupervised machine learning using the KMeans algorithm. From this, four classes of cryptocurrencies were identified. Of these four, class 2 appears to contain only one data point that is likely an outlier. Class 3 contains cryptocurrencies that have both a low total coins mined and low total coin supply count. This could indicate cryptocurrencies within class 3 may not be the best candidates for investment as there is both low supply and low demand. Classes 0 and 1 would need additional research and analysis to determine the features that seperate the two and what features make them the best candidates for investment. Additional analysis could be done on sale/buy percentages for a timeframe to see consumer trends, price fluctuation, if the type of coin has significant influence, or if the platform the currency is avaiable for sale on has influence. 
 
