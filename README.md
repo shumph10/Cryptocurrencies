@@ -56,3 +56,8 @@ Software: Python 3.9.7, VisualStudio Code 1.69.1, Jupyter Notebook 6.4.0, Scikit
 
 From the analysis and cleaning of the data, 532 cryptocurrencies were able to be analyzed through unsupervised machine learning using the KMeans algorithm. From this, four classes of cryptocurrencies were identified. Of these four, class 2 appears to contain only one data point that is likely an outlier. Class 3 contains cryptocurrencies that have both a low total coins mined and low total coin supply count. This could indicate cryptocurrencies within class 3 may not be the best candidates for investment as there is both low supply and low demand. Classes 0 and 1 would need additional research and analysis to determine the features that seperate the two and what features make them the best candidates for investment. Additional analysis could be done on sale/buy percentages for a timeframe to see consumer trends, price fluctuation, if the type of coin has significant influence, or if the platform the currency is avaiable for sale on has influence. 
 
+-----------------------------------------
+##**Contact Me**
+
+Email: sarahhumphrey2016@outlook.com </br>
+[LinkedIn](https://www.linkedin.com/in/sarah-humphrey-data-analyst/)
